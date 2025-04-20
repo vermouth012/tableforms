@@ -1,0 +1,151 @@
+body {
+    font-family: Arial;
+    font-size: 18px;
+    color: navy;
+    background-color: #f7f9f7;
+  }
+
+  table {
+    border: 5px solid black;
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid black;
+  }
+  
+  thead th,
+  thead tr {
+    background-color: #b3dec1;
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+  .invoice-header {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .invoice-number {
+    background-color: #56568a;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .invoice-datecost {
+    background-color: #56568a;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .info-section td {
+    background-color: #b3dec1;
+    color: black;
+    vertical-align: top;
+  }
+
+  .center-heading {
+    text-align: center;
+    background-color: #56568a;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .item-description {
+    color: black;
+  }
+  
+  .item-quantity {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  
+  .cost {
+    color: black;
+    background-color: white;
+    text-align: right;
+  }
+
+  tfoot .total {
+    background-color: #56568a;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  tfoot .subtotal {
+    background-color: white;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+  }
+  
+  tfoot .tax {
+    text-align: left;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+  
+  tfoot .totalcost {
+    background-color: #56568a;
+    color: white;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  tfoot tr {
+    background-color: #b3dec1;
+    text-align: center;
+  }
+
+
+
+  input[type=text],
+  textarea,
+  select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #b3dec1;
+    color: navy;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 18px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #23379683;
+    color: white;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice and Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- === Invoice Table === -->
+<table>
+  <thead>
+    <tr>
+      <th colspan="4" class="invoice-header">Invoice Tabular data</th>
+    </tr>
+    <tr>
+      <td colspan="3" class="invoice-number">Invoice #123456789</td>
+      <td colspan="2" class="invoice-datecost">14 January 2025</td>
+    </tr>
+  </thead>
+  <tbody class="info-section">
+    <tr>
+      <td colspan="2">
+        <span class="bold">Pay to:</span><br>
+        Acme Billing Co.<br>
+        123 Main St.<br>
+        Cityville, NA 12345
+      </td>
+      <td colspan="2">
+        <span class="bold">Customer:</span><br>
+        John Smith<br>
+        321 Willow Way<br>
+        Southeast Northwestershire, MA 54321
+      </td>
+    </tr>
+  </tbody>
+  <thead>
+    <tr>
+      <th class="invoice-number"> Name / Description</th>
+      <th class="center-heading">Qty.</th>
+      <th class="center-heading">@</th>
+      <th class="invoice-datecost">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="item-description">Paperclips</td>
+      <td class="item-quantity">1000</td>
+      <td class="item-quantity">0.01</td>
+      <td class="cost">10.00</td>
+    </tr>
+    <tr>
+      <td class="item-description">Staples (box)</td>
+      <td class="item-quantity">100</td>
+      <td class="item-quantity">1.00</td>
+      <td class="cost">100.00</td>
+    </tr>
+    <tr>
+      <td class="item-description">Bond Paper (box)</td>
+      <td class="item-quantity">100</td>
+      <td class="item-quantity">1.00</td>
+      <td class="cost">110.00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3" class="subtotal">Subtotal</td>
+      <td class="cost">110.00</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="tax">Tax</td>
+      <td class="item-quantity">8%</td>
+      <td class="cost">8.80</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="right total">Grand Total</td>
+      <td class="totalcost">$ 118.80</td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- === Form === -->
+<form method="post" action="greetings.html">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" size="30" placeholder="Type your name here" maxlength="50" required></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Sex:</label></td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male" checked>
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="eyeColor">Eye Color</label></td>
+        <td>
+          <select name="eyeColor" id="eyeColor">
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="brown">brown</option>
+            <option value="black" selected>black</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Check all the Applies</label></td>
+        <td>
+          <input type="checkbox" id="feature1" name="feature1" value="6ft.">
+          <label for="feature1">Over 6ft. Tall</label><br>
+          <input type="checkbox" id="feature2" name="feature2" value="200lbs.">
+          <label for="feature2">Over 200 pounds</label><br>
+          <input type="checkbox" id="feature3" name="feature3" value="less than 200lbs.">
+          <label for="feature3">Less than 200 pounds</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="ability">Describe your athletic ability</label></td>
+        <td><textarea id="ability" name="ability" rows="6" cols="30" required></textarea></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="2"><input type="submit" value="Enter my Information"></th>
+      </tr>
+    </tfoot>
+  </table>
+</form>
+
+</body>
+</html>
